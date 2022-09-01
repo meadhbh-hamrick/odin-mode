@@ -290,7 +290,6 @@
   (setq-local end-of-defun-function 'odin-end-of-defun)
   (setq-local electric-indent-chars
               (append "{}():;," electric-indent-chars))
-  (setq indent-tabs-mode t)
   (setq imenu-generic-expression
         `(("type" ,(concat "^" odin-type-rx) 1)
           ("proc" ,(concat "^" odin-proc-rx) 1)))
